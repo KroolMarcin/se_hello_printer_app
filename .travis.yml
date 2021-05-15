@@ -11,5 +11,5 @@ services:
   - docker
 deploy:
   provider: heroku
-  app: serene-shelf-51204
+  app: peaceful-escarpment-073634
   api_key: ${HEROKU_API_KEY}
