@@ -1,0 +1,15 @@
+lanquage: python
+
+install:
+  - make deps
+script:
+  - make lint
+  - make test
+  - make docker_build
+  - make docker_push
+services:
+  - docker
+deploy:
+  provider: heroku
+  app: serene-shelf-51204
+  api_key: ${HEROKU_API_KEY}
